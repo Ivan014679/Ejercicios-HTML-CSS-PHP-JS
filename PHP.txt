@@ -1,4 +1,4 @@
-Lenguake de programación PHP (Personal Home Page)
+Lenguaje de programación PHP (Personal Home Page)
 
 -Tecnología del lado del servidor
 -Lenguaje de alto nivel
