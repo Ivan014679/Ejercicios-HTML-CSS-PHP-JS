@@ -1,0 +1,32 @@
+Selectores (Internal)
+
+1. Etiqueta
+
+p{
+	color:blue;
+}
+
+2. De clase (class="nombreestilo")
+
+.nombreestilo{
+	color:red;
+}
+
+3. Id
+
+#elemento {
+	color:green;
+}
+
+4. Múltiple
+
+table,tr,td{
+
+}
+
+5. Descendente: La forma de lectura es desde el último elemento hacia el primero. Objetos contenidos dentro de otro.
+
+table tr td p a{
+
+}
+

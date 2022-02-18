@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>.:: FORMULARIOS ::.</title>
+	</head>
+	<body>
+		<form action="index.html" method="post">
+			<!-- AREA DE TEXTO
+			<textarea name="Comentarios" rows="5" cols="10">Prueba</textarea>
+			-->
+			Usuario: <input name="Usuario" type="text" size="50" maxlength="5" value="XYZ al cuadrado" placeholder="Ingrese su nombre de usuario"><br>
+			Clave: <input name="Clave" type="password">
+			<br><br>
+			Intereses:
+			<br><br>
+			<input name="Intereses" type="Checkbox" value="Arte">Arte
+			<br>
+			<input name="Intereses" type="Checkbox" value="Deportes">Deportes
+			<br><br>
+			Canal favorito:
+			<br><br>
+			<input name="Canal" type="Radio" value="RCN">RCN
+			<br>
+			<input name="Canal" type="Radio" value="Caracol">Caracol
+			<br><br>
+			Género:
+			<select>
+				<option value="M">Masculino</option>
+				<option value="F">Femenino</option>
+			</select>
+			<br><br>
+			<input type="reset" value="Reiniciar">
+			<br><br>
+			<input type="button" value="Acción">
+			<br><br>
+			<input type="submit" value="Enviar datos">			
+		</form>
+	</body>
+</html>
+
+<!-- action="Hacia donde se envían esos datos del formulario, es un archivo html"
+method="post/get" hace referencia al método de envío de datos, get es el envío de datos mediante la url, post envía los datos de manera oculta
+name="Un nombre de variable"
+rows="Cuántos renglones serán visualizados en el área de texto"
+cols="Cuántas columnas serán visualizados en el área de texto"
+type="text/password/submit/checkbox/radio/restore/button/hidden/file"
+disabled para deshabilitar un input
+readonly para sólo lectura -->

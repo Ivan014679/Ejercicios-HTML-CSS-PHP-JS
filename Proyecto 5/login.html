@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>.:: Login ::.</title>
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Los iconos desaparecen si descargo este CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Los iconos desaparecen si descargo este CSS -->
+	</head>
+	<body>
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+			<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Cerrar &times;</button>
+			<a href="index.html" class="w3-bar-item w3-button">
+				<i class="w3-large fa fa-home"></i>
+				<span>P&aacute;gina principal</span>
+			</a>
+			<button id="closepest" class="w3-button w3-teal w3-block w3-left-align w3-black" onclick="cerrarPestana();">Salir de la p&aacute;gina</button>
+		</div>
+
+		<div id="main">
+
+			<div class="w3-teal">
+				<button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+				<div class="w3-container">
+					<table>
+						<tr>
+							<td>
+								<i class="w3-xxxlarge fa fa-user-circle" style="margin-right: 10px;"></i>
+							</td>
+							<td>
+								<h1><font color="white">Una simple p&aacute;gina</font></h1>
+							</td>
+						</tr>
+					</table>					 
+				</div>
+			</div>
+		</div>
+		<form id="form" action="index.html" class="w3-container w3-card-4 w3-light-grey w3-text-blue-grey w3-margin">
+			<h2 class="w3-center">Inicio de sesi&oacute;n</h2>
+ 
+			<div class="w3-row w3-section">
+				<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+				<div class="w3-rest">
+					<input id="usernamefield" class="w3-input w3-border" name="username" type="text" maxlength="30" placeholder="Digite su nombre de usuario">
+				</div>
+			</div>
+
+			<div class="w3-row w3-section">
+				<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-key"></i></div>
+				<div class="w3-rest">
+					<input id="passwordfield" class="w3-input w3-border" name="password" type="password" maxlength="10" placeholder="Digite su contrase&ntilde;a">
+				</div>
+			</div>
+
+			<div class="w3-center">
+				<input class="w3-button w3-block w3-indigo" type="button" value="Ingresar" onclick="alert()" style="font-family: Comic Sans MS; margin-bottom: 15px;">
+			</div>
+		</form>
+		
+		<div id="alerta" class="w3-panel w3-yellow w3-display-container w3-card-4 w3-margin" style="display: none;">
+			<span onclick="this.parentElement.style.display='none'" class="w3-button w3-yellow w3-large w3-display-topright">&times;</span>
+			<div class="w3-col" style="width:50px"><i class="w3-xxlarge glyphicon glyphicon-alert" style="margin-top: 15px;"></i></div>
+			<h3>Advertencia</h3>
+			<p>Para iniciar sesi&oacute;n, debe rellenar todos los campos.</p>
+		</div>
+	</body>
+	<script>
+		//Sidebar
+		function w3_open() {
+			document.getElementById("main").style.marginLeft = "25%";
+			document.getElementById("mySidebar").style.width = "25%";
+			document.getElementById("mySidebar").style.display = "block";
+			document.getElementById("openNav").style.display = 'none';
+		}
+		function w3_close() {
+			document.getElementById("main").style.marginLeft = "0%";
+			document.getElementById("mySidebar").style.display = "none";
+			document.getElementById("openNav").style.display = "inline-block";
+		}
+		//Mensaje emergente
+		function alert(){
+			var elemento = document.getElementById('alerta');
+			var usernamefield = document.getElementById('usernamefield');
+			var passwordfield = document.getElementById('passwordfield');
+			
+			if(usernamefield.value == null || usernamefield.value == "" || passwordfield.value == null || passwordfield.value == ""){
+				elemento.style.display = "block";
+			}else{
+				document.forms["form"].submit();
+			}			
+		}
+		
+		//Cerrar pestaña
+		function cerrarPestana(){
+			window.close();
+		}
+	</script> 
+</html>

@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>.:: JavaScript ::.</title>
+		<script>
+			var numero;
+			
+			numero = 6;
+			
+			//console.log("El valor de la variable es: " + numero);
+			
+			//for(;;){
+				//alert("El valor de la variable es: " + numero);
+			//}
+			function cambiar(){
+				var elemento = document.getElementById('parrafo');
+				
+				var respuesta = confirm("Esta seguro de que desea realizar la acción?");
+				
+				if(respuesta){
+					elemento.innerHTML = "Nuevo texto";
+				}				
+			}
+			
+			function desaparecer(){
+				var elemento = document.getElementById('parrafo');
+				
+				elemento.style.display = "none";			
+			}
+			
+			function aparecer(){
+				var elemento = document.getElementById('parrafo');
+				
+				elemento.style.display = "block";			
+			}
+		</script>
+	</head>
+	<body>
+		<p id="parrafo">
+			<span>Texto de prueba</span>
+		</p>
+		<input type="button" value="Cambiar texto" onclick="cambiar()">
+		<input type="button" value="Desaparecer" onclick="desaparecer()">
+		<input type="button" value="Aparecer" onclick="aparecer()">
+	</body>
+</html>

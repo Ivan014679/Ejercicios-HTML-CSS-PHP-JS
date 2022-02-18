@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<title>.:: FORMULARIOS ::.</title>
+	</head>
+	<body>
+		<form action="index.html" method="post">
+			<h1><marquee bgcolor="black" behavior="alternate" direction="right">
+				<font face="Algerian" color="white"><big>FORMULARIO</big></font>
+			</marquee></h1>
+			<fieldset style="background-color: #bdfff1">
+				<legend><font face="Bernard MT Condensed"><big>Datos de acceso</big></font></legend>
+				<table>
+					<tr>
+						<td>
+							<font face="Constantia">Usuario:</font>
+						</td>
+						<td>
+							<input name="Usuario" type="text" size="50" maxlength="15" placeholder="Ingrese su nombre de usuario" style="margin-bottom: 5px; font-family: Comic Sans MS">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<font face="Constantia">Clave:</font>
+						</td>
+						<td>
+							<input name="Clave" type="password" size="50" placeholder="Ingrese su contrase&ntilde;a" style="margin-bottom: 5px; font-family: Comic Sans MS">
+						</td>
+				</table>
+			</fieldset>
+			<fieldset style="background-color: ffebbd">
+				<legend><font face="Bernard MT Condensed"><big>Datos personales</big></font></legend>
+				<table>
+					<tr>
+						<td width="500">
+							<table>
+								<tr>
+									<td>
+										<font face="Constantia">Nombres:</font>
+									</td>
+									<td>
+										<input name="Nombres" type="text" size="50" maxlength="50" placeholder="Nombres" style="margin-bottom: 5px; font-family: Comic Sans MS">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<font face="Constantia">Apellidos:</font>
+									</td>
+									<td>
+										<input name="Apellidos" type="text" size="50" maxlength="50" placeholder="Apellidos" style="font-family: Comic Sans MS">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<font face="Constantia">Identificaci&oacute;n:
+									</td>
+									<td>
+										<input name="Nidentificacion" type="number" size="50" min="0" max="999999999999" placeholder="N&uacute;mero de identificaci&oacute;n" style="font-family: Comic Sans MS">
+										&nbsp;-&nbsp;
+										<select style="font-family: Comic Sans MS">
+											<option value="Cedula">C&eacute;dula</option>
+											<option value="Tarjeta de identidad">Tarjeta de identidad</option>
+											<option value="Pasaporte">Pasaporte</option>
+										</select></font>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="500">
+							<font face="Constantia">Estado civil:&nbsp;</font>
+							<select style="font-family: Comic Sans MS">
+								<option value="Solter@">Solter@</option>
+								<option value="Casad@">Casad@</option>
+								<option value="Divorciad@">Divorciad@</option>
+								<option value="Viud@">Viud@</option>
+							</select><br>
+							<font face="Constantia">G&eacute;nero:</font>
+							<font face="Comic Sans MS">
+								<br>
+								<input name="Genero" type="Radio" value="Masculino"><small>Masculino</small>
+								<br>
+								<input name="Genero" type="Radio" value="Femenino"><small>Femenino</small>
+							</font>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<fieldset style="background-color: #d2feae">
+				<legend><font face="Bernard MT Condensed"><big>Datos complementarios</big></font></legend>
+				<table>
+					<tr>
+						<td width="500" valign="top">
+							<font face="Constantia">Intereses:</font>
+							<font face="Comic Sans MS">
+								<br>
+								<input name="Intereses" type="Checkbox" value="Videojuegos"><small>Videojuegos</small>
+								<br>
+								<input name="Intereses" type="Checkbox" value="Deportes"><small>Deportes</small>
+								<br>
+								<input name="Intereses" type="Checkbox" value="Cocina"><small>Cocina</small>
+								<br>
+								<input name="Intereses" type="Checkbox" value="Musica"><small>M&uacute;sica</small>
+								<br>
+								<input name="Intereses" type="Checkbox" value="Tecnologia"><small>Tecnolog&iacute;a</small>
+							</font>
+						</td>
+						<td width="500">
+							<font face="Constantia">Observaciones:</font>
+							<br>
+							<textarea name="Observaciones" rows="5" cols="100" style="resize: none; margin-top: 5px; font-family: Comic Sans MS; font-size: 12px"></textarea>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<p align="center" style="margin-top: 5px"><input type="submit" value="Enviar datos" style="font-family: Comic Sans MS"></p>
+		</form>
+	</body>
+</html>
+
+<!-- Crear un formularo que tendrá varias secciones:
+-Datos de acceso: Nombre de usuario (text) y contraseña (password)
+-Datos personales: Nombres, Apellidos, Tipo de identificación (Lista de selección: CEDULA, TI, PASAPORTE), Número de identificación
+Estado civil (SOLTER@, CASAD@, DIVORCIAD@, VIUD@), Género (Radiobutton: Masculino/Femenino)
+-Datos complementarios: Intereses (5 Checkbox), Observaciones (textarea)
+
+Botón para enviar datos 
+			<fieldset>
+				<legend>Datos de animales</legend>
+				<select name="Animal" size="2" multiple>
+					<option value="Perro">Perro</option>
+					<option value="Gato">Gato</option>
+					<option value="Oso" selected>Oso</option>
+				</select>
+			</fieldset>
+-->

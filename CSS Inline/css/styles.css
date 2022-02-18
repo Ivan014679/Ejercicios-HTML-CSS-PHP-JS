@@ -1,0 +1,25 @@
+p {
+	text-align: left;
+	color: green;
+}
+
+/* Selector de clase */
+.parrafo1 {
+	text-align: right;
+	color: yellow;
+}
+
+.parrafo2 {
+	text-align: justify;
+	color: orange;
+}
+
+.contenedor {
+	text-align: right;
+	color: cyan;
+	background: #000000;
+	width: 100px;
+	height: 100px;
+	margin-top: 50px;
+	border-radius: 10px;
+}

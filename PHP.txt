@@ -1,0 +1,42 @@
+Lenguake de programación PHP (Personal Home Page)
+
+-Tecnología del lado del servidor
+-Lenguaje de alto nivel
+-Lenguaje de código abierto
+-Brinda un nivel de seguridad básico en el código
+
+Tipos de datos
+
+-Numéricos
+-Booleanos
+-Strings
+-Arrays
+	*Unidimensionales
+	*Bidimensionales
+	*Multidimensionales
+-Objetos
+
+Variables
+
+-Identificador ($variable)
+
+Operadores
+
+-Aritméticos (+ - * / %)
+-Lógicos (and (&&) or (||))
+-Cadenas (.)
+
+Estructuras de control
+
+-Condicionales
+-Ciclos o bucles
+
+En el directorio de C:\xampp\htdocs se debe crear el proyecto
+
+$_POST
+
+Arreglo asociativo
+
+$arreglo['numero'] = 5;
+
+echo $_POST['valor';]

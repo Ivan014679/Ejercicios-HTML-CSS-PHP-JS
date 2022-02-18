@@ -1,0 +1,191 @@
+<html>
+	<head>
+		<title>.:: Principal ::.</title>
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Los iconos desaparecen si descargo este CSS -->
+		<style>
+			.mySlides {display:none}
+			.w3-left, .w3-right, .w3-badge {cursor:pointer}
+			.w3-badge {height:13px;width:13px;padding:0}
+		</style>
+	</head>
+	<body>
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+			<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Cerrar &times;</button>
+			<a href="login.html" class="w3-bar-item w3-button">
+				<i class="w3-large fa fa-user-circle"></i>
+				<span>Iniciar sesi&oacute;n</span>
+			</a>
+			<button id="closepest" class="w3-button w3-teal w3-block w3-left-align w3-black" onclick="cerrarPestana();">Salir de la p&aacute;gina</button>
+		</div>
+
+		<div id="main">
+
+			<div class="w3-teal">
+				<button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+				<div class="w3-container">
+					<table>
+						<tr>
+							<td>
+								<i class="w3-xxxlarge fa fa-home"></i>
+							</td>
+							<td>
+								<h1><font color="white">Una simple p&aacute;gina</font></h1>
+							</td>
+						</tr>
+					</table>				 
+				</div>
+			</div>
+			<div class="w3-bar w3-black">
+					<button class="w3-bar-item w3-button" onclick="openText('Videojuego')">Videojuego</button>
+					<button class="w3-bar-item w3-button" onclick="openText('Age of Empires')">Age of Empires</button>
+					<button class="w3-bar-item w3-button" onclick="openText('Los Sims')">Los Sims</button>
+				</div>
+
+				<div id="Videojuego" class="w3-container city">
+					<h2 class="w3-center w3-animate-zoom"><font face="Algerian" color="black"><b>Videojuego</b></font></h2>
+					<p align="justify"><font face="Arial">
+						Un <i>videojuego</i> o juego de video es un juego electr&oacute;nico en el que una o m&aacute;s personas <u>interact&uacute;an,
+						por medio de un controlador, con un dispositivo que muestra im&aacute;genes de video</u>. Este dispositivo
+						electr&oacute;nico, conocido gen&eacute;ricamente como "plataforma", puede ser una computadora, una m&aacute;quina arcade,
+						una videoconsola o un dispositivo port&aacute;til (un tel&eacute;fono m&oacute;vil, por ejemplo). Los videojuegos son,
+						a&ntilde;o por a&ntilde;o, una de las principales industrias del <u>arte y el entretenimiento</u>.<br><br>
+
+						Generalmente, los videojuegos hacen uso de otras maneras, aparte de la imagen, de proveer la
+						<u>interactividad e informaci&oacute;n al jugador</u>. El audio es casi universal, us&aacute;ndose dispositivos de
+						reproducci&oacute;n de sonido, tales como altavoces y auriculares. Otro tipo de realimentaci&oacute;n se hace a
+						trav&eacute;s de perif&eacute;ricos h&aacute;pticos que producen vibraci&oacute;n o retroalimentaci&oacute;n de fuerza,
+						us&aacute;ndose a veces	la vibraci&oacute;n para simular la retroalimentaci&oacute;n de fuerza. 			
+					</font></p>
+					<div class="w3-container">
+						<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Sobre la p&aacute;gina</button>
+						<div id="id01" class="w3-modal">
+							<div class="w3-modal-content">
+								<header class="w3-container w3-teal"> 
+									<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+									<h2>Sobre la p&aacute;gina</h2>
+								</header>
+								<div class="w3-container">
+									<p>Creada por Ivan Camilo Narvaez Vanegas, usando las CSS de W3Schools.</p>
+								</div>
+								<footer class="w3-container w3-teal">
+									<p>Instituci&oacute;n Universitaria CESMAG. 2018. Todos los derechos reservados.</p>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="Age of Empires" class="w3-container city" style="display:none">
+					<h2 class="w3-center w3-animate-zoom"><font face="Algerian" color="brown"><b>Age of Empires</b></font></h2>
+					<p align="justify"><font face="Arial">
+						<i>Age of Empires</i> es un videojuego de <u>estrategia en tiempo real</u> para computadoras personales,
+						el primero de la serie hom&oacute;nima fue lanzado el 26 de octubre de 1997 y escenificado en una l&iacute;nea
+						del tiempo de 3000 a&ntilde;os, desde la temprana Edad de Piedra hasta la Edad de Hierro.
+						El jugador tiene opci&oacute;n de elegir entre <u>varias civilizaciones</u>.
+						Se pueden ver varios tipos de civilizaciones las cuales dependiendo de su elecci&oacute;n le
+						favorecer&aacute;n ciertas estrategias, por la simple raz&oacute;n que cada una tiene bonificaciones particulares en el juego.
+						<div class="w3-content w3-display-container" style="max-width:800px">
+							<img class="mySlides" src="img/aoe1.jpg" style="width:100%">
+							<img class="mySlides" src="img/aoe2.jpg" style="width:100%">
+							<img class="mySlides" src="img/aoe3.jpg" style="width:100%">
+							<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+								<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+								<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+								<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+								<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+								<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+							</div>
+						</div>
+						
+						<ul class="w3-ul w3-border" style="margin-top: 15px;">
+							<li><h3>Sagas</h3></li>
+							<li>Age of Empires I: En la edad antigua, antes de Cristo</li>
+							<li>Age of Empires II: En la edad media</li>
+							<li>Age of Empires III: &Eacute;poca colonial</li>
+						</ul>
+					</font></p>
+				</div>
+				
+				<div id="Los Sims" class="w3-container city" style="display:none">
+					<h2 class="w3-center w3-animate-zoom"><font face="Algerian" color="green"><b>Los Sims</b></font></h2>
+					<p align="justify"><font face="Arial">
+						<i>Los Sims</i> es un videojuego de <u>simulaci&oacute;n social y estrategia</u> creado por el dise&ntilde;ador de videojuegos Will Wright,
+						desarrollado por Maxis y publicado por Electronic Arts en el a&ntilde;o 2000. Desde entonces la franquicia ha vendido m&aacute;s
+						de 100 millones de copias (contando las dos primeras generaciones), siendo el videojuego de PC m&aacute;s vendido de la historia.
+						<center>
+							<div class="w3-card-4" style="width:50%; margin-bottom: 20px;">
+								<img src="img/ts2.jpg" alt="Person" style="width:100%">
+								<div class="w3-container">
+									<h4><b>Los Sims 2</b></h4>
+									<p>Segunda entrega de la saga de Los Sims</p>
+								</div>
+							</div>
+						</center>
+						Desde 1991, Will Wright hab&iacute;a conseguido resultados similares con el popular juego SimCity y todas sus secuelas.
+						El &eacute;xito de sus videojuegos se basa en su filosof&iacute;a creativa de aplicar <uteor&iacute;as cient&iacute;ficas
+						para el diseño de simuladores de vida</u>, ya sea de una ciudad, un planeta, un hormiguero o, como en Los Sims, una comunidad vecinal.
+						Los Sims es el primer videojuego de este g&eacute;nero en el que cada ser vivo tiene <u>personalidad propia</u> y se controla individualmente
+						de forma directa.<br><br>
+					</font></p>
+				</div>
+		</div>
+	</body>
+	<script>
+		//Sidebar
+		function w3_open() {
+			document.getElementById("main").style.marginLeft = "25%";
+			document.getElementById("mySidebar").style.width = "25%";
+			document.getElementById("mySidebar").style.display = "block";
+			document.getElementById("openNav").style.display = 'none';
+		}
+		function w3_close() {
+			document.getElementById("main").style.marginLeft = "0%";
+			document.getElementById("mySidebar").style.display = "none";
+			document.getElementById("openNav").style.display = "inline-block";
+		} 
+
+		//Bars
+		function openText(cityName) {
+			var i;
+			var x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			document.getElementById(cityName).style.display = "block";  
+		}
+
+		//Images
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function currentDiv(n) {
+			showDivs(slideIndex = n);
+		}
+		
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			if (n > x.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" w3-white", "");
+			}
+			x[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " w3-white";
+		}
+		
+		//Cerrar pestaña
+		function cerrarPestana(){
+			window.close();
+		}
+	</script>
+</html>

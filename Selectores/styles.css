@@ -1,0 +1,8 @@
+table.estilo,tr,td {
+    border: solid 1px #000000;
+    border-collapse: collapse;
+}
+
+table.estilo tr td p.parrafo a,div { /* aqui el estilo se aplica a los vínculos <a>*/
+    font-size: 30px;
+}
